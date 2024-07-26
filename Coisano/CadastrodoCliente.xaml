@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Coisano.CadastrodoCliente"
-             Title="Cadastro">
+             Shell.NavBarIsVisible="false"
+             BackgroundColor="#b9edcb">
 
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="10">
@@ -14,30 +15,31 @@
             </HorizontalStackLayout>
 
             <!-- Form Fields -->
-            <Grid ColumnDefinitions="Auto, *" RowDefinitions="Auto">
+            <Grid ColumnDefinitions="Auto, *" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
                 <Image Source="user_icon.png" Grid.Row="0" Grid.Column="0" WidthRequest="30" HeightRequest="30" />
-                <Entry x:Name="NomeEntry" Placeholder="Nome" Grid.Row="0" Grid.Column="1" />
+                <Entry x:Name="NomeEntry" Placeholder="Nome" Grid.Row="0" Grid.Column="1"  BackgroundColor="White"/>
 
                 <Image Source="address_icon.png" Grid.Row="1" Grid.Column="0" WidthRequest="30" HeightRequest="30" />
-                <Entry x:Name="EnderecoEntry" Placeholder="Endereço" Grid.Row="1" Grid.Column="1" />
+                <Entry x:Name="EnderecoEntry" Placeholder="Endereço" Grid.Row="1" Grid.Column="1" BackgroundColor="White"/>
 
                 <Image Source="email_icon.png" Grid.Row="2" Grid.Column="0" WidthRequest="30" HeightRequest="30" />
-                <Entry x:Name="EmailEntry" Placeholder="E_mail" Grid.Row="2" Grid.Column="1" />
+                <Entry x:Name="EmailEntry" Placeholder="E_mail" Grid.Row="2" Grid.Column="1" BackgroundColor="White" />
 
                 <Image Source="cnpj_icon.png" Grid.Row="3" Grid.Column="0" WidthRequest="30" HeightRequest="30" />
-                <Entry x:Name="CnpjEntry" Placeholder="CNPJ" Grid.Row="3" Grid.Column="1" />
+                <Entry x:Name="CnpjEntry" Placeholder="CNPJ" Grid.Row="3" Grid.Column="1"  BackgroundColor="White"/>
 
                 <Image Source="phone_icon.png" Grid.Row="4" Grid.Column="0" WidthRequest="30" HeightRequest="30" />
-                <Entry x:Name="TelefoneEntry" Placeholder="Telefone" Grid.Row="4" Grid.Column="1" />
+                <Entry x:Name="TelefoneEntry" Placeholder="Telefone" Grid.Row="4" Grid.Column="1" BackgroundColor="White" />
 
                 <Image Source="cpf_icon.png" Grid.Row="5" Grid.Column="0" WidthRequest="30" HeightRequest="30" />
-                <Entry x:Name="CpfEntry" Placeholder="CPF" Grid.Row="5" Grid.Column="1" />
+                <Entry x:Name="CpfEntry" Placeholder="CPF" Grid.Row="5" Grid.Column="1"  BackgroundColor="White"/>
             </Grid>
 
             <!-- Buttons -->
             <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
-                <Button Text="Cancelar" BackgroundColor="Gray" TextColor="White" Clicked="OnCancelClicked" />
-                <Button Text="Salvar e Continuar" BackgroundColor="Blue" TextColor="White" Clicked="OnSaveClicked" />
+                <Button Text="Cancelar" BackgroundColor="#b8f092
+                " TextColor="White" Clicked="OnCancelClicked" />
+                <Button Text="Salvar e Continuar" BackgroundColor="#78FA7C" TextColor="White" Clicked="OnSaveClicked" />
             </HorizontalStackLayout>
 
         </VerticalStackLayout>

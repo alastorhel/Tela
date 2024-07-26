@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Coisano.MainPage"
-             Title="Tela Inicial">
+             Shell.NavBarIsVisible="false"
+             BackgroundColor="#8f948e">
 
     <AbsoluteLayout>
 
@@ -27,8 +28,8 @@
         <!-- Center Logo -->
         <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
             <Image Source="imagem.png"
-                   WidthRequest="200"
-                   HeightRequest="200"
+                   WidthRequest="300"
+                   HeightRequest="300"
                    HorizontalOptions="Center" />
             <Label Text="A melhor empresa de camisetas que você vai encontrar na região"
                    HorizontalOptions="Center"
@@ -49,9 +50,9 @@
                AbsoluteLayout.LayoutBounds="0.05, 0.95, 50, 50"
                AbsoluteLayout.LayoutFlags="PositionProportional" />
         <Image Source="imagem5.png"
-               WidthRequest="50"
-               HeightRequest="50"
-               AbsoluteLayout.LayoutBounds="0.95, 0.95, 50, 50"
+               WidthRequest="300"
+               HeightRequest="100"
+               AbsoluteLayout.LayoutBounds="0.95, 0.95, 30, 30"
                AbsoluteLayout.LayoutFlags="PositionProportional" />
 
        
