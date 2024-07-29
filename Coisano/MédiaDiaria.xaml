@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Coisano.MédiaDiaria"
+             Shell.NavBarIsVisible="false"
+             BackgroundColor="#b9edcb">
+    <ContentPage.Content>
+        <Grid RowSpacing="20" ColumnSpacing="0" Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Logo -->
+            <Image Source="logoin.png" HorizontalOptions="Center" VerticalOptions="Start" HeightRequest="100"/>
+
+            <!-- Form -->
+            <StackLayout Grid.Row="1" Padding="20" Spacing="15">
+                <!-- Client -->
+                <Frame BackgroundColor="White" CornerRadius="5">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="client_icon.png" HeightRequest="30" VerticalOptions="Center"/>
+                        <Entry Placeholder="CLIENT" HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Average daily and time -->
+                <Frame BackgroundColor="White" CornerRadius="5">
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="average_time_icon.png" HeightRequest="30" VerticalOptions="Center"/>
+                        <Entry Placeholder="Média diária e tempo:" HorizontalOptions="FillAndExpand"/>
+                    </StackLayout>
+                </Frame>
+
+                <!-- Save and Continue Button -->
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+                    <Button Text="SALVAR E CONTINUAR" BackgroundColor="#78FA7C" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

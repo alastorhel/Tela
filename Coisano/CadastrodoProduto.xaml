@@ -8,7 +8,7 @@
     <ScrollView>
         <VerticalStackLayout Padding="10" Spacing="10">
             <!-- Image -->
-            <Image Source="package_icon.png" HeightRequest="100" HorizontalOptions="Center" />
+            <Image Source="caixa.png" HeightRequest="100" HorizontalOptions="Center" />
 
             <!-- Nome do produto -->
             <StackLayout Orientation="Horizontal" Spacing="5">
@@ -43,12 +43,15 @@
                 <Label Text="Categoria:" VerticalOptions="Center" />
                 <Entry x:Name="CategoryEntry" HorizontalOptions="FillAndExpand"  BackgroundColor="White"/>
                 <Image Source="check_icon.png" HeightRequest="20" VerticalOptions="Center" />
+                 
             </StackLayout>
 
             <!-- Buttons -->
             <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
-                <Button Text="Cancelar" BackgroundColor="#ed8080" />
-                <Button Text="Salvar e Continuar"  />
+                <Button Text="Cancelar" BackgroundColor="#ed8080"  HeightRequest="20" />
+                <Button Text="Salvar e Continuar" HeightRequest="20" />
+
+                
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>

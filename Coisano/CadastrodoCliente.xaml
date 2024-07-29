@@ -37,8 +37,8 @@
 
             <!-- Buttons -->
             <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
-                <Button Text="Cancelar" BackgroundColor="#b8f092
-                " TextColor="White" Clicked="OnCancelClicked" />
+                <Button Text="Cancelar" BackgroundColor="#b8f092"
+                 TextColor="White" Clicked="OnCancelClicked" />
                 <Button Text="Salvar e Continuar" BackgroundColor="#78FA7C" TextColor="White" Clicked="OnSaveClicked" />
             </HorizontalStackLayout>
 
