@@ -23,7 +23,7 @@
                 <!-- Client -->
                 <Frame BackgroundColor="White" CornerRadius="5">
                     <StackLayout Orientation="Horizontal">
-                        <Image Source="client_icon.png" HeightRequest="30" VerticalOptions="Center"/>
+                        <Image Source="clint.png" HeightRequest="60" VerticalOptions="Center"/>
                         <Entry Placeholder="CLIENT" HorizontalOptions="FillAndExpand"/>
                     </StackLayout>
                 </Frame>
@@ -31,7 +31,7 @@
                 <!-- Average daily and time -->
                 <Frame BackgroundColor="White" CornerRadius="5">
                     <StackLayout Orientation="Horizontal">
-                        <Image Source="average_time_icon.png" HeightRequest="30" VerticalOptions="Center"/>
+                        <Image Source="reg.png" HeightRequest="60" VerticalOptions="Center"/>
                         <Entry Placeholder="Média diária e tempo:" HorizontalOptions="FillAndExpand"/>
                     </StackLayout>
                 </Frame>

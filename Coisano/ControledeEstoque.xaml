@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Coisano.ControledeEstoque"
+             Title="Controle de Estoque"
+              Shell.NavBarIsVisible="false"
+             BackgroundColor="#b9edcb">
+
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="15">
+
+            <!-- Title -->
+            <Label Text="Controle de Estoque" 
+                   FontSize="24" 
+                   HorizontalOptions="Center" />
+
+            <!-- Icon -->
+            <Image Source="osos.png" 
+                   WidthRequest="100" 
+                   HeightRequest="100" 
+                   HorizontalOptions="Center" />
+
+            <!-- Product Code -->
+            <StackLayout>
+                <Label Text="Código do produto:" />
+                <Entry x:Name="ProductCodeEntry" Placeholder="Digite o código do produto" />
+            </StackLayout>
+
+            <!-- Category -->
+            <StackLayout>
+                <Label Text="Categoria:" />
+                <Entry x:Name="CategoryEntry" Placeholder="Digite a categoria" />
+            </StackLayout>
+
+            <!-- Total Quantity -->
+            <StackLayout>
+                <Label Text="Quantidade Total:" />
+                <Entry x:Name="TotalQuantityEntry" Placeholder="Digite a quantidade total" Keyboard="Numeric" />
+            </StackLayout>
+
+            <!-- Save Button -->
+            <Button Text="SALVAR E CONTINUAR" HorizontalOptions="Center" Clicked="OnSaveButtonClicked" BackgroundColor="#19632d" />
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

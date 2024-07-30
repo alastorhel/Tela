@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Coisano.CadastroMateriaPrima"
+             Title="Cadastro de Matéria Prima"
+             Shell.NavBarIsVisible="false"
+             BackgroundColor="#b9edcb">
+
+
+    <Grid Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Text="Cadastro de Matéria Prima" 
+               FontSize="Large" 
+               HorizontalOptions="Center" 
+               Grid.Row="0" 
+               Grid.ColumnSpan="2"/>
+        
+        <StackLayout Grid.Row="1" Grid.Column="0" Padding="10">
+            <Label Text="Nome da Matéria Prima:"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Entry x:Name="NomeMateriaPrima" Placeholder="Nome da matéria prima" Grid.Column="0"/>
+                <ImageButton Source="lap.png" Grid.Column="1" Clicked="OnEditClicked"/>
+                <ImageButton Source="lixo.png" Grid.Column="2" Clicked="OnDeleteClicked"/>
+            </Grid>
+
+            <Label Text="Unidade de medida:"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Entry x:Name="UnidadeMedida" Placeholder="Unidade de medida" Grid.Column="0"/>
+                <ImageButton Source="edit.png" Grid.Column="1" Clicked="OnEditClicked"/>
+                <ImageButton Source="delete.png" Grid.Column="2" Clicked="OnDeleteClicked"/>
+            </Grid>
+        </StackLayout>
+
+        <Button Text="Salvar e continuar" Grid.Row="3" Grid.ColumnSpan="2" Clicked="OnSaveClicked"/>
+
+        <StackLayout x:Name="Resultado" Grid.Row="2" Grid.ColumnSpan="2" Padding="10" IsVisible="False">
+            <Image x:Name="ResultadoImagem" Source="not_found.png" HeightRequest="100"/>
+            <Label x:Name="ResultadoTexto" Text="Matéria Prima não encontrada!!" HorizontalOptions="Center"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="ConfirmarSim" Text="SIM" Clicked="OnConfirmarSimClicked"/>
+                <Button x:Name="ConfirmarNao" Text="NÃO" Clicked="OnConfirmarNaoClicked"/>
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>

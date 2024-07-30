@@ -9,7 +9,7 @@
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:MédiaDiaria}"
-        Route="MédiaDiaria" />
+        ContentTemplate="{DataTemplate local:CadastroMateriaPrima}"
+        Route="CadastroMateriaPrima" />
 
 </Shell>

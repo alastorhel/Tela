@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Coisano.Listadeclientes"
+             Title="Lista de Clientes"
+             Shell.NavBarIsVisible="false"
+             BackgroundColor="#b9edcb">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="15">
+
+            <!-- Title -->
+            <Label Text="Lista de Clientes"
+                    
+                   FontSize="24" 
+                   HorizontalOptions="Center" />
+
+            <!-- Icon -->
+            <Image Source="papel.png" 
+                   WidthRequest="100" 
+                   HeightRequest="100" 
+                   HorizontalOptions="Center" />
+
+            <!-- Search Bar -->
+            <SearchBar Placeholder="Buscar cliente" 
+                        BackgroundColor="White"
+                       HorizontalOptions="FillAndExpand"
+                       SearchButtonPressed="OnSearchButtonPressed" />
+
+            <!-- Client List -->
+            <StackLayout x:Name="ClientList">
+                    
+                <!-- Placeholder for dynamically generated client entries -->
+            </StackLayout>
+            <!-- Back Button -->
+            <Button Text="Voltar" HorizontalOptions="Center" Clicked="OnBackButtonClicked" BackgroundColor="#b8f092" />
+
+            <!-- Save Button -->
+            <Button Text="SALVAR E CONTINUAR" HorizontalOptions="Center" Clicked="OnSaveButtonClicked" BackgroundColor="#19632d" />
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
