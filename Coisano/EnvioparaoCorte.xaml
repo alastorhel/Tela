@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Coisano.EnvioparaoCorte"
+             Title="Envio para Corte"
+               Shell.NavBarIsVisible="false"
+             BackgroundColor="#b9edcb">
+
+    <ScrollView>
+        <StackLayout Padding="20">
+
+            <Frame BackgroundColor="LightGreen" CornerRadius="10" Padding="20">
+                <StackLayout>
+                    <Label Text="Envio para Corte" FontSize="Medium" HorizontalOptions="Center" Margin="0, 0, 0, 20" />
+
+                    <Entry x:Name="CortadoraEntry" Placeholder="Cortadora(o)" />
+                    <ImageButton Source="add_icon.png" WidthRequest="30" HeightRequest="30" Clicked="OnAddCortadoraClicked" />
+
+                    <Entry x:Name="MateriaPrimaEntry" Placeholder="Matéria Prima" />
+                    <ImageButton Source="edit_icon.png" WidthRequest="30" HeightRequest="30" Clicked="OnEditMateriaPrimaClicked" />
+                    <ImageButton Source="delete_icon.png" WidthRequest="30" HeightRequest="30" Clicked="OnDeleteMateriaPrimaClicked" />
+
+                    <Entry x:Name="QuantidadeEntry" Placeholder="Quantidade" Keyboard="Numeric" />
+
+                    <Button Text="Salvar e continuar" Clicked="OnSaveContinueClicked" />
+                    <Button Text="Voltar" Clicked="OnBackClicked" />
+                </StackLayout>
+            </Frame>
+
+            <StackLayout Orientation="Horizontal" IsVisible="False" x:Name="ErrorLayout">
+                <Image Source="warning_icon.png" WidthRequest="30" HeightRequest="30" />
+                <Label x:Name="ErrorLabel" Text="Erro não especificado!" TextColor="Red" VerticalOptions="Center" />
+            </StackLayout>
+            
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

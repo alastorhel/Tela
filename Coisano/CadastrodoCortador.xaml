@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Coisano.CadastrodoCortador"
+             Title="Cadastro do Cortador(A)"
+               Shell.NavBarIsVisible="false"
+             BackgroundColor="#b9edcb">
+
+    <ScrollView>
+        <StackLayout Padding="20">
+
+            <Frame BackgroundColor="LightGreen" CornerRadius="10" Padding="20">
+                <StackLayout>
+                    <Label Text="Cadastro do Cortador(A)" FontSize="Medium" HorizontalOptions="Center" Margin="0, 0, 0, 20" />
+
+                    <Entry x:Name="NomeEntry" Placeholder="Nome" />
+                    <Entry x:Name="TelefoneEntry" Placeholder="Telefone" Keyboard="Telephone" />
+
+                    <Button Text="Continuar e Salvar" Clicked="OnSaveContinueClicked" />
+                    <Button Text="Voltar" Clicked="OnBackClicked" />
+                </StackLayout>
+            </Frame>
+
+            <StackLayout Orientation="Horizontal" IsVisible="False" x:Name="ErrorLayout" Padding="10">
+                <Image Source="warning_icon.png" WidthRequest="30" HeightRequest="30" />
+                <Label x:Name="ErrorLabel" Text="Erro não especificado!" TextColor="Red" VerticalOptions="Center" />
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
