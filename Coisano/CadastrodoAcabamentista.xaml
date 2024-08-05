@@ -10,11 +10,11 @@
             <Label Text="Cadastro do Acabamentista" FontSize="Large" HorizontalOptions="Center" />
 
             <StackLayout Orientation="Vertical" VerticalOptions="Center">
-                <Entry Placeholder="Nome do responsável pelo acabamento:" WidthRequest="300" />
+                <Entry Placeholder="Nome do responsável pelo acabamento:" WidthRequest="300" BackgroundColor="White" />
             </StackLayout>
 
             <StackLayout Orientation="Vertical" VerticalOptions="Center">
-                <Entry Placeholder="Telefone:" WidthRequest="300" />
+                <Entry Placeholder="Telefone:" WidthRequest="300" BackgroundColor="White" />
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Center">

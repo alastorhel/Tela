@@ -3,9 +3,9 @@ using Microsoft.Maui.Controls;
 
 namespace Coisano
 {
-    public partial class EnvioParaCorte : ContentPage
+    public partial class EnvioparaoCorte : ContentPage
     {
-        public EnvioParaCorte()
+        public EnvioparaoCorte()
         {
             InitializeComponent();
         }

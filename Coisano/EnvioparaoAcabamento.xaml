@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="YourNamespace.EnvioparaoAcabamento"
+             x:Class="Coisano.EnvioparaoAcabamento"
              Title="Envio para o Acabamento"
                 Shell.NavBarIsVisible="false"
              BackgroundColor="#b9edcb">
@@ -9,19 +9,19 @@
 
     <ScrollView>
         <StackLayout Padding="20" Spacing="20" BackgroundColor="LightGreen">
-            <Label Text="Envio para o Acabamento" FontSize="Large" HorizontalOptions="Center" />
+            <Label Text="Envio para o Acabamento" FontSize="Large" HorizontalOptions="Center"  />
 
             <StackLayout Orientation="Horizontal" VerticalOptions="Center">
-                <Entry Placeholder="Nome do responsável pelo acabamento:" WidthRequest="300" />
+                <Entry Placeholder="Nome do responsável pelo acabamento:" WidthRequest="300" BackgroundColor="White"  />
                 <Image Source="add_icon.png" HeightRequest="50" />
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" VerticalOptions="Center">
-                <Entry Placeholder="Identificação do produto:" WidthRequest="300" />
+                <Entry Placeholder="Identificação do produto:" WidthRequest="300" BackgroundColor="White" />
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" VerticalOptions="Center">
-                <Entry Placeholder="Quantidade:" WidthRequest="300" />
+                <Entry Placeholder="Quantidade:" WidthRequest="300"  BackgroundColor="White" />
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Center">

@@ -33,9 +33,11 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
                 </Grid.ColumnDefinitions>
                 <Entry x:Name="NomeMateriaPrima" Placeholder="Nome da matéria prima" Grid.Column="0"/>
-                <ImageButton Source="lap.png" Grid.Column="1" Clicked="OnEditClicked"/>
+                <ImageButton Source="lap.png" Grid.Column="4" Clicked="OnEditClicked"/>
                 <ImageButton Source="lixo.png" Grid.Column="2" Clicked="OnDeleteClicked"/>
             </Grid>
 

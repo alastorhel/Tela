@@ -23,20 +23,20 @@
 
             <!-- Product Code -->
             <StackLayout>
-                <Label Text="Código do produto:" />
-                <Entry x:Name="ProductCodeEntry" Placeholder="Digite o código do produto" />
+                <Label Text="Código do produto:"  />
+                <Entry x:Name="ProductCodeEntry" Placeholder="Digite o código do produto"  BackgroundColor="White" />
             </StackLayout>
 
             <!-- Category -->
             <StackLayout>
-                <Label Text="Categoria:" />
-                <Entry x:Name="CategoryEntry" Placeholder="Digite a categoria" />
+                <Label Text="Categoria:"  />
+                <Entry x:Name="CategoryEntry" Placeholder="Digite a categoria"  BackgroundColor="White" />
             </StackLayout>
 
             <!-- Total Quantity -->
             <StackLayout>
-                <Label Text="Quantidade Total:" />
-                <Entry x:Name="TotalQuantityEntry" Placeholder="Digite a quantidade total" Keyboard="Numeric" />
+                <Label Text="Quantidade Total:"  />
+                <Entry x:Name="TotalQuantityEntry" Placeholder="Digite a quantidade total" Keyboard="Numeric"  BackgroundColor="White" />
             </StackLayout>
 
             <!-- Save Button -->

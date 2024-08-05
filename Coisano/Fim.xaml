@@ -2,48 +2,40 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Coisano.Fim"
-             Title="Pedido Finalizado"
-             Shell.NavBarIsVisible="false"
+              Shell.NavBarIsVisible="false"
              BackgroundColor="#b9edcb">
 
-    <ScrollView>
-        <StackLayout Padding="20" VerticalOptions="CenterAndExpand">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
             
             <Label Text="PEDIDO FINALIZADO"
-                   FontSize="24"
-                   BackgroundColor="LightGreen"
-                   HorizontalOptions="Center" />
-
-            <Image Source="pedido_finalizado.png"
                    HorizontalOptions="Center"
-                   VerticalOptions="Center"
-                   HeightRequest="100"
-                   WidthRequest="100"/>
+                   FontSize="Large"
+                   
+                   Padding="10"/>
+            
+            <Image Source="fim.png"
+                   HorizontalOptions="Center"
+                   Margin="5"/>
+            
+            <Label Text="Confirmação do Pedido enviada para:"
+                   HorizontalOptions="Center"
+                   Margin="10, 0"/>
 
-            <Frame Padding="10" BorderColor="Gray">
-                <StackLayout>
-                    <Label Text="Confirmação do Pedido enviada para:" />
-                    <Label x:Name="EmailLabel" Text="email@exemplo.com" FontAttributes="Bold"/>
-                </StackLayout>
-            </Frame>
+            <Label Text="PEDIDO GERADO:"
+                   HorizontalOptions="Center"
+                   Margin="10, 0"/>
 
-            <Frame Padding="10" BorderColor="Gray">
-                <StackLayout>
-                    <Label Text="PEDIDO GERADO:" />
-                    <Label x:Name="PedidoLabel" Text="1" FontAttributes="Bold"/>
-                </StackLayout>
-            </Frame>
+            <Label Text="QUANTIDADE TOTAL:"
+                   HorizontalOptions="Center"
+                   Margin="10, 0"/>
 
-            <Frame Padding="10" BorderColor="Gray">
-                <StackLayout>
-                    <Label Text="QUANTIDADE TOTAL:" />
-                    <Label x:Name="QuantidadeLabel" Text="20" FontAttributes="Bold"/>
-                </StackLayout>
-            </Frame>
-
-            <Button Text="VOLTAR" Clicked="OnVoltarClicked" BackgroundColor="LightGreen" />
-
+            <Button Text="VOLTAR"
+                    BackgroundColor="LightGreen"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    Clicked="OnVoltarClicked"/>
+        
         </StackLayout>
-    </ScrollView>
-
+    </ContentPage.Content>
 </ContentPage>

@@ -18,15 +18,15 @@
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
-                        <Entry x:Name="CostureiraEntry" Placeholder="Costureira:" Grid.Column="0" />
-                        <ImageButton Source="add_icon.png" WidthRequest="30" HeightRequest="30" Clicked="OnAddCostureiraClicked" Grid.Column="1" />
+                        <Entry x:Name="CostureiraEntry" Placeholder="Costureira:" Grid.Column="0"  BackgroundColor="White" />
+                        <ImageButton Source="mais.png" WidthRequest="30" HeightRequest="30" Clicked="OnAddCostureiraClicked" Grid.Column="1" BackgroundColor="#b8f092" />
                     </Grid>
 
-                    <Entry x:Name="MateriaPrimaEntry" Placeholder="Matéria Prima:" />
-                    <Entry x:Name="QuantidadeEntry" Placeholder="Quantidade:" Keyboard="Numeric" />
+                    <Entry x:Name="MateriaPrimaEntry" Placeholder="Matéria Prima:" BackgroundColor="White" />
+                    <Entry x:Name="QuantidadeEntry" Placeholder="Quantidade:" Keyboard="Numeric" BackgroundColor="White" />
 
-                    <Button Text="Continuar e Salvar" Clicked="OnSaveContinueClicked" />
-                    <Button Text="Voltar" Clicked="OnBackClicked" />
+                    <Button Text="Continuar e Salvar" Clicked="OnSaveContinueClicked" BackgroundColor="#287a36"/>
+                    <Button Text="Voltar" Clicked="OnBackClicked"  BackgroundColor="#61c773" />
                 </StackLayout>
             </Frame>
 

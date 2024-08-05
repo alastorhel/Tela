@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Coisano.CadastrodaCostureira"
+             x:Class=" Coisano.CadastrodaCostureira"
              Title="Cadastro da Costureira(O)"
-             Shell.NavBarIsVisible="false"
+              Shell.NavBarIsVisible="false"
              BackgroundColor="#b9edcb">
 
     <StackLayout Padding="20" VerticalOptions="CenterAndExpand">
@@ -27,44 +27,8 @@
         </Frame>
 
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-            <Button Text="Continuar e Salvar" Clicked="OnContinuarSalvarClicked"/>
-            <Button Text="Voltar" Clicked="OnVoltarClicked"/>
-        </StackLayout>
-
-        <Label x:Name="MensagemErro" Text="Dados incorretos!!!" TextColor="Red" IsVisible="False" HorizontalOptions="Center" />
-
-    </StackLayout>
-
-</ContentPage>
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SeuProjeto.CadastroCostureiraPage"
-             Title="Cadastro da Costureira(O)">
-
-    <StackLayout Padding="20" VerticalOptions="CenterAndExpand">
-        
-        <Label Text="Cadastro da Costureira(O)"
-               FontSize="24"
-               HorizontalOptions="Center" />
-
-        <Frame Padding="10" BorderColor="Gray">
-            <StackLayout>
-                <Label Text="Nome da Costureira(O):" />
-                <Entry x:Name="NomeEntry" Placeholder="Insira o nome" />
-            </StackLayout>
-        </Frame>
-
-        <Frame Padding="10" BorderColor="Gray">
-            <StackLayout>
-                <Label Text="Telefone:" />
-                <Entry x:Name="TelefoneEntry" Placeholder="Insira o telefone" />
-            </StackLayout>
-        </Frame>
-
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-            <Button Text="Continuar e Salvar" Clicked="OnContinuarSalvarClicked"/>
-            <Button Text="Voltar" Clicked="OnVoltarClicked"/>
+            <Button Text="Continuar e Salvar" Clicked="OnContinuarSalvarClicked"  BackgroundColor="#b8f092"/>
+            <Button Text="Voltar" Clicked="OnVoltarClicked"  BackgroundColor="#ed8080" />
         </StackLayout>
 
         <Label x:Name="MensagemErro" Text="Dados incorretos!!!" TextColor="Red" IsVisible="False" HorizontalOptions="Center" />

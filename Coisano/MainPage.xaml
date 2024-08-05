@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Coisano.MainPage"
              Shell.NavBarIsVisible="false"
-             BackgroundColor="#8f948e">
+             BackgroundColor="#b9edcb">
 
     <AbsoluteLayout>
 
@@ -34,7 +34,7 @@
             <Label Text="A melhor empresa de camisetas que você vai encontrar na região"
                    HorizontalOptions="Center"
                    FontSize="Medium"
-                   Margin="0,100,0,20" />
+                   Margin="0,50,0,20" />
             <Button Text="ENTRAR"
                     WidthRequest="100"
                     BackgroundColor="LightBlue"
