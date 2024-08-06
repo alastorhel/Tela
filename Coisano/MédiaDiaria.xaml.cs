@@ -9,11 +9,9 @@ namespace Coisano
             InitializeComponent();
         }
 
-        // Event handlers for the buttons can be added here
-        // For example:
-        // private void OnSaveAndContinueButtonClicked(object sender, EventArgs e)
-        // {
-        //     // Handle save and continue button click
-        // }
+         private void OnSaveClicked(object sender, EventArgs args)
+      {
+        Application.Current.MainPage = new Listadeclientes();
+      }
     }
 }

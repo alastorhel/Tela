@@ -11,7 +11,7 @@ namespace Coisano
 
         private void OnEnterClicked(object sender, EventArgs e)
         {
-            // Lógica para o botão Entrar
+            Application.Current.MainPage = new CadastrodoCliente();
         }
     }
 }

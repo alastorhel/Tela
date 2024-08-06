@@ -23,7 +23,7 @@ namespace Coisano
             }
             else
             {
-                // Handle save functionality
+                Application.Current.MainPage = new Estoque();
                 await DisplayAlert("Sucesso", "Dados salvos com sucesso!", "OK");
             }
         }

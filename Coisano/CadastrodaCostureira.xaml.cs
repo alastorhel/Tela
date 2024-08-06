@@ -18,13 +18,13 @@ namespace Coisano
             else
             {
                 MensagemErro.IsVisible = false;
-                // Adicione a lógica para salvar os dados aqui
+                Application.Current.MainPage = new EnvioparaoAcabamento();
             }
         }
 
         private void OnVoltarClicked(object sender, EventArgs e)
         {
-            // Adicione a lógica para voltar à página anterior aqui
+            Application.Current.MainPage = new Vendas();
         }
     }
 }

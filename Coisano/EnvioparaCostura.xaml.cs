@@ -19,12 +19,12 @@ namespace Coisano
 
         private void OnSaveContinueClicked(object sender, EventArgs e)
         {
-            // Logic to save and continue
+           Application.Current.MainPage = new Vendas();
         }
 
         private void OnBackClicked(object sender, EventArgs e)
         {
-            // Logic to go back
+             Application.Current.MainPage = new CadastrodoCortador();
             Navigation.PopAsync();
         }
     }

@@ -38,7 +38,7 @@
 
                 <!-- Save and Continue Button -->
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
-                    <Button Text="SALVAR E CONTINUAR" BackgroundColor="#78FA7C" TextColor="Black"/>
+                    <Button Text="SALVAR E CONTINUAR" BackgroundColor="#78FA7C" TextColor="Black"  Clicked="OnSaveClicked"/>
                 </StackLayout>
             </StackLayout>
         </Grid>

@@ -9,16 +9,13 @@ namespace Coisano
             InitializeComponent();
         }
 
-        // Event handlers for the buttons can be added here
-        // For example:
-        // private void OnCancelButtonClicked(object sender, EventArgs e)
-        // {
-        //     // Handle cancel button click
-        // }
-        
-        // private void OnSaveAndContinueButtonClicked(object sender, EventArgs e)
-        // {
-        //     // Handle save and continue button click
-        // }
+         private void OnCancelClicked(object sender, EventArgs args)
+      {  Application.Current.MainPage = new CadastrodoProduto();
+     
+      }
+      private void OnSaveClicked(object sender, EventArgs args)
+      {
+        Application.Current.MainPage = new MédiaDiaria();
+      }
     }
 }

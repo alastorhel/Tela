@@ -11,7 +11,7 @@ namespace Coisano
 
         private void OnSaveButtonClicked(object sender, EventArgs e)
         {
-            // Implement your save logic here
+            Application.Current.MainPage = new CadastrodaCostureira();
             DisplayAlert("Success", "Customer information saved successfully", "OK");
         }
     }

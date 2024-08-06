@@ -13,11 +13,11 @@
                 <StackLayout>
                     <Label Text="Cadastro do Cortador(A)" FontSize="Medium" HorizontalOptions="Center" Margin="0, 0, 0, 20" />
 
-                    <Entry x:Name="NomeEntry" Placeholder="Nome" />
-                    <Entry x:Name="TelefoneEntry" Placeholder="Telefone" Keyboard="Telephone" />
+                    <Entry x:Name="NomeEntry" Placeholder="Nome" BackgroundColor="White" />
+                    <Entry x:Name="TelefoneEntry" Placeholder="Telefone" Keyboard="Telephone" BackgroundColor="White"/>
 
-                    <Button Text="Continuar e Salvar" Clicked="OnSaveContinueClicked" />
-                    <Button Text="Voltar" Clicked="OnBackClicked" />
+                    <Button Text="Continuar e Salvar" Clicked="OnSaveContinueClicked"    BackgroundColor="#63c983"/>
+                    <Button Text="Voltar" Clicked="OnBackClicked" BackgroundColor="#63c983" />
                 </StackLayout>
             </Frame>
 

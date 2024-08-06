@@ -11,6 +11,7 @@ namespace Coisano
 
         private async void OnVoltarClicked(object sender, EventArgs e)
         {
+             Application.Current.MainPage = new CadastrodoCliente();
             await Navigation.PopAsync();
         }
     }

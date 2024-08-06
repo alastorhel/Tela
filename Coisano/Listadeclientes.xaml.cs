@@ -63,12 +63,12 @@ namespace Coisano
 
         private void OnBackButtonClicked(object sender, EventArgs e)
         {
-            // Handle back button functionality
+            Application.Current.MainPage = new MédiaDiaria();
         }
 
         private void OnSaveButtonClicked(object sender, EventArgs e)
         {
-            // Handle save button functionality
+          Application.Current.MainPage = new ControledeEstoque();
         }
 
         private async void OnEditClientClicked(Client client)

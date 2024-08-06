@@ -11,13 +11,13 @@ namespace Coisano
 
         private void OnSaveButtonClicked(object sender, EventArgs e)
         {
-            // Implement your save logic here
+            Application.Current.MainPage = new Fim();
             DisplayAlert("Success", "Customer information saved successfully", "OK");
         }
 
         private void OnBackButtonClicked(object sender, EventArgs e)
         {
-            // Implement your back navigation logic here
+             Application.Current.MainPage = new EnvioparaoAcabamento();
             Navigation.PopAsync();
         }
     }

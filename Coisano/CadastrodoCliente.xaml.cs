@@ -11,12 +11,12 @@ namespace Coisano
 
         private void OnCancelClicked(object sender, EventArgs e)
         {
-            // Lógica para o botão Cancelar
+           Application.Current.MainPage = new MainPage();
         }
 
         private void OnSaveClicked(object sender, EventArgs e)
         {
-            // Lógica para o botão Salvar e Continuar
+            Application.Current.MainPage = new CadastrodoProduto();
         }
     }
 }

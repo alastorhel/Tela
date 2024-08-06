@@ -9,6 +9,13 @@ namespace Coisano
             InitializeComponent();
         }
 
-        // Adicione aqui métodos de evento para os botões, se necessário.
+      private void OnCancelClicked(object sender, EventArgs args)
+      {
+       Application.Current.MainPage = new CadastrodoCliente();
+      }
+      private void OnSaveClicked(object sender, EventArgs args)
+      {
+        Application.Current.MainPage = new Viabilidade();
+      }
     }
 }

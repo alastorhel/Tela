@@ -46,8 +46,8 @@
 
                 <!-- Buttons -->
                 <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
-                    <Button Text="Cancelar" BackgroundColor="#b8f092" TextColor="Black"/>
-                    <Button Text="Salvar e Continuar" BackgroundColor="#78FA7C" TextColor="Black"/>
+                    <Button Text="Cancelar" BackgroundColor="#b8f092" TextColor="Black"  Clicked="OnCancelClicked"/>
+                    <Button Text="Salvar e Continuar" BackgroundColor="#78FA7C" TextColor="Black"  Clicked="OnSaveClicked"/>
                 </StackLayout>
             </StackLayout>
         </Grid>

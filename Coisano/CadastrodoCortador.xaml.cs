@@ -12,14 +12,14 @@ namespace Coisano
 
         private void OnSaveContinueClicked(object sender, EventArgs e)
         {
-            // Logic to save and continue
+           Application.Current.MainPage = new EnvioParaCostura();
             ErrorLayout.IsVisible = true;
             ErrorLabel.Text = "Cortador(A), não encontrado!!";
         }
 
         private void OnBackClicked(object sender, EventArgs e)
         {
-            // Logic to go back
+            Application.Current.MainPage = new Estoque();
             Navigation.PopAsync();
         }
     }

@@ -8,34 +8,34 @@
 
     <ScrollView>
         <StackLayout Padding="20" Spacing="20" BackgroundColor="LightGreen">
-            <Image Source="tag_image.png" HeightRequest="100" HorizontalOptions="Center" />
+            <Image Source="venda.png" HeightRequest="100" HorizontalOptions="Center" />
             
             <StackLayout Orientation="Horizontal" VerticalOptions="Center">
                 <Image Source="client_icon.png" HeightRequest="50" />
-                <Entry Placeholder="CLIENTE" WidthRequest="300" />
+                <Entry Placeholder="CLIENTE" WidthRequest="300"   BackgroundColor="White"/>
             </StackLayout>
             
             <StackLayout Orientation="Horizontal" VerticalOptions="Center">
                 <Image Source="order_icon.png" HeightRequest="50" />
-                <Entry Placeholder="Pedido:" WidthRequest="300" />
+                <Entry Placeholder="Pedido:" WidthRequest="300" BackgroundColor="White" />
             </StackLayout>
             
             <StackLayout Orientation="Horizontal" VerticalOptions="Center">
                 <Image Source="discount_icon.png" HeightRequest="50" />
-                <Entry Placeholder="Desconto:" WidthRequest="300" />
+                <Entry Placeholder="Desconto:" WidthRequest="300" BackgroundColor="White" />
             </StackLayout>
             
             <StackLayout Orientation="Horizontal" VerticalOptions="Center">
-                <Label Text="Data de Entrega:" VerticalOptions="Center" />
-                <DatePicker WidthRequest="300" />
+                <Label Text="Data de Entrega:" VerticalOptions="Center"   />
+                <DatePicker WidthRequest="300" BackgroundColor="White" />
             </StackLayout>
             
-            <StackLayout Orientation="Horizontal" VerticalOptions="Center">
-                <Label Text="Lista de Entregas:" VerticalOptions="Center" />
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center" BackgroundColor="White" >
+                <Label Text="Lista de Entregas:" VerticalOptions="Center"  />
                 <Entry WidthRequest="300" />
             </StackLayout>
             
-            <Button Text="Concluir e Salvar" BackgroundColor="LightGray" TextColor="Black" VerticalOptions="Center" />
+           
             <Button Text="Concluir e Salvar" BackgroundColor="LightGray" TextColor="Black" VerticalOptions="Center" Clicked="OnSaveButtonClicked" />
 
         </StackLayout>
