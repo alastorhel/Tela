@@ -16,22 +16,22 @@
 
             <!-- Form Fields -->
             <Grid ColumnDefinitions="Auto, *" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto">
-                <Image Source="user_icon.png" Grid.Row="0" Grid.Column="0" WidthRequest="30" HeightRequest="30" />
+                <Image Source="pes.png" Grid.Row="0" Grid.Column="0" WidthRequest="30" HeightRequest="30" />
                 <Entry x:Name="NomeEntry" Placeholder="Nome" Grid.Row="0" Grid.Column="1"  BackgroundColor="White"/>
 
-                <Image Source="address_icon.png" Grid.Row="1" Grid.Column="0" WidthRequest="30" HeightRequest="30" />
+                <Image Source="loc.png" Grid.Row="1" Grid.Column="0" WidthRequest="30" HeightRequest="30" />
                 <Entry x:Name="EnderecoEntry" Placeholder="Endereço" Grid.Row="1" Grid.Column="1" BackgroundColor="White"/>
 
-                <Image Source="email_icon.png" Grid.Row="2" Grid.Column="0" WidthRequest="30" HeightRequest="30" />
+                <Image Source="email.png" Grid.Row="2" Grid.Column="0" WidthRequest="30" HeightRequest="30" />
                 <Entry x:Name="EmailEntry" Placeholder="E_mail" Grid.Row="2" Grid.Column="1" BackgroundColor="White" />
 
-                <Image Source="cnpj_icon.png" Grid.Row="3" Grid.Column="0" WidthRequest="30" HeightRequest="30" />
+                <Image Source="papell.png" Grid.Row="3" Grid.Column="0" WidthRequest="30" HeightRequest="30" />
                 <Entry x:Name="CnpjEntry" Placeholder="CNPJ" Grid.Row="3" Grid.Column="1"  BackgroundColor="White"/>
 
-                <Image Source="phone_icon.png" Grid.Row="4" Grid.Column="0" WidthRequest="30" HeightRequest="30" />
+                <Image Source="tele.png" Grid.Row="4" Grid.Column="0" WidthRequest="30" HeightRequest="30" />
                 <Entry x:Name="TelefoneEntry" Placeholder="Telefone" Grid.Row="4" Grid.Column="1" BackgroundColor="White" />
 
-                <Image Source="cpf_icon.png" Grid.Row="5" Grid.Column="0" WidthRequest="30" HeightRequest="30" />
+                <Image Source="os.png" Grid.Row="5" Grid.Column="0" WidthRequest="30" HeightRequest="30" />
                 <Entry x:Name="CpfEntry" Placeholder="CPF" Grid.Row="5" Grid.Column="1"  BackgroundColor="White"/>
             </Grid>
 

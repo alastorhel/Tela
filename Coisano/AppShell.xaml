@@ -9,7 +9,7 @@
 
     <ShellContent
         Title="Home"
-        ContentTemplate="{DataTemplate local:EnvioParaCostura}"
-        Route="EnvioParaCostura" />
+        ContentTemplate="{DataTemplate local:CadastrodoCliente}"
+        Route="CadastrodoCliente" />
 
 </Shell>
