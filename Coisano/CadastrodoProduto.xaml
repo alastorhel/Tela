@@ -13,35 +13,35 @@
             <!-- Nome do produto -->
             <StackLayout Orientation="Horizontal" Spacing="5">
                 <Label Text="Nome do produto:" VerticalOptions="Center" />
-                <Entry x:Name="ProductNameEntry" HorizontalOptions="FillAndExpand" BackgroundColor="White"/>
+                <Entry x:Name="NomeEntry" HorizontalOptions="FillAndExpand" BackgroundColor="White"/>
                 <Image Source="camisaaa.png" HeightRequest="50" VerticalOptions="Center" />
             </StackLayout>
 
             <!-- Descrição -->
             <StackLayout Orientation="Horizontal" Spacing="5">
                 <Label Text="Descrição:" VerticalOptions="Center" />
-                <Entry x:Name="DescriptionEntry" HorizontalOptions="FillAndExpand" BackgroundColor="White"/>
+                <Entry x:Name="DescriçãoEntry" HorizontalOptions="FillAndExpand" BackgroundColor="White"/>
                 <Image Source="doca.png" HeightRequest="50" VerticalOptions="Center" />
             </StackLayout>
 
             <!-- Código de identificação -->
             <StackLayout Orientation="Horizontal" Spacing="5">
                 <Label Text="Código de identificação:" VerticalOptions="Center" />
-                <Entry x:Name="IdentificationCodeEntry" HorizontalOptions="FillAndExpand" BackgroundColor="White"/>
+                <Entry x:Name="codIdentificaçaoEntry" HorizontalOptions="FillAndExpand" BackgroundColor="White"/>
                 <Image Source="tik.png" HeightRequest="50" VerticalOptions="Center" />
             </StackLayout>
 
             <!-- Preço da unidade -->
             <StackLayout Orientation="Horizontal" Spacing="5">
                 <Label Text="Preço da unidade:" VerticalOptions="Center" />
-                <Entry x:Name="UnitPriceEntry" HorizontalOptions="FillAndExpand" BackgroundColor="White"/>
+                <Entry x:Name="PreçoUnidadeEntry" HorizontalOptions="FillAndExpand" BackgroundColor="White"/>
                 <Image Source="tak.png" HeightRequest="50" VerticalOptions="Center" />
             </StackLayout>
 
             <!-- Categoria -->
             <StackLayout Orientation="Horizontal" Spacing="5">
                 <Label Text="Categoria:" VerticalOptions="Center" />
-                <Entry x:Name="CategoryEntry" HorizontalOptions="FillAndExpand"  BackgroundColor="White"/>
+                <Entry x:Name="CategoriaEntry" HorizontalOptions="FillAndExpand"  BackgroundColor="White"/>
                 <Image Source="cat.png" HeightRequest="50" VerticalOptions="Center" />
                  
             </StackLayout>
