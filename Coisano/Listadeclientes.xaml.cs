@@ -63,7 +63,7 @@ namespace Coisano
 
         private void OnBackButtonClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new MédiaDiaria();
+            Application.Current.MainPage = new MédiaDiariaPage();
         }
 
         private void OnSaveButtonClicked(object sender, EventArgs e)

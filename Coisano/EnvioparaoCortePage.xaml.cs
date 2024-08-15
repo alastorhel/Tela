@@ -1,11 +1,16 @@
 using System;
+using Coisano.Modelos;
+using Controles;
 using Microsoft.Maui.Controls;
 
 namespace Coisano
-{
-    public partial class EnvioparaoCorte : ContentPage
+{   
+
+    public partial class EnvioparaoCortePage : ContentPage
     {
-        public EnvioparaoCorte()
+
+         EnvioparaoCorteControle envioparaoCorteControle = new EnvioparaoCorteControle();
+        public EnvioparaoCortePage()
         {
             InitializeComponent();
         }
@@ -31,13 +36,24 @@ namespace Coisano
 
         private void OnSaveContinueClicked(object sender, EventArgs e)
         {
+            if      (string.IsNullOrWhiteSpace( CortadoraEntry.Text) ||
+                     string.IsNullOrWhiteSpace(QuantidadeEntry.Text) ||
+                    string.IsNullOrWhiteSpace(MateriaPrimaEntry.Text)); 
+
+             
+
+             else
+             {
+                 var c = new EnvioparaoCorte();
+                 c.Cortadora = CortadoraEntry.Text;
+                 c.MateriaPrima = MateriaPrimaEntry.Text;
+                 c.Quantidade = QuantidadeEntry.Text;
+                envioparaoCorteControle.CriarOuAtualizar(c);
+
            Application.Current.MainPage = new CadastrodoCortador();
         }
 
-        private void OnBackClicked(object sender, EventArgs e)
-        {
-            Application.Current.MainPage = new Estoque();
-            Navigation.PopAsync();
-        }
+       
     }
+}
 }

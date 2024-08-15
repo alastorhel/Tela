@@ -30,7 +30,7 @@ namespace Coisano
 
         private bool ValidarEntrada()
         {
-           Application.Current.MainPage = new EnvioparaoCorte();
+           Application.Current.MainPage = new EnvioparaoCortePage();
             return !string.IsNullOrEmpty(TempoEntrada.Text) && !string.IsNullOrEmpty(QuantidadeAtual.Text);
         }
     }

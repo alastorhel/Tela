@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Coisano.EnvioparaoCorte"
+             x:Class="Coisano.EnvioparaoCortePage"
              Title="Envio para Corte"
                Shell.NavBarIsVisible="false"
              BackgroundColor="#b9edcb">
@@ -23,7 +23,6 @@
                     <Entry x:Name="QuantidadeEntry" Placeholder="Quantidade" Keyboard="Numeric" BackgroundColor="White" />
 
                     <Button Text="Salvar e continuar" Clicked="OnSaveContinueClicked"   BackgroundColor="#6bc29d" />
-                    <Button Text="Voltar" Clicked="OnBackClicked"  BackgroundColor="#6bc29d" />
                 </StackLayout>
             </Frame>
 

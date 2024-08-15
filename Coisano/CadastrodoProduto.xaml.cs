@@ -40,7 +40,7 @@ namespace Coisano
                  c.PreçoUnidade = PreçoUnidadeEntry.Text;
                  produtoControle.CriarOuAtualizar(c);
 
-                 Application.Current.MainPage = new Viabilidade();
+                 Application.Current.MainPage = new ViabilidadePage();
 
       }
     }

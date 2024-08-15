@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Coisano.MédiaDiaria"
+             x:Class="Coisano.MédiaDiariaPage"
              Shell.NavBarIsVisible="false"
              BackgroundColor="#b9edcb">
     <ContentPage.Content>
@@ -24,7 +24,7 @@
                 <Frame BackgroundColor="White" CornerRadius="5">
                     <StackLayout Orientation="Horizontal">
                         <Image Source="clint.png" HeightRequest="60" VerticalOptions="Center"/>
-                        <Entry Placeholder="CLIENT" HorizontalOptions="FillAndExpand"/>
+                        <Entry x:Name="ClienteEntry" Placeholder="CLIENT" HorizontalOptions="FillAndExpand"/>
                     </StackLayout>
                 </Frame>
 
@@ -32,7 +32,7 @@
                 <Frame BackgroundColor="White" CornerRadius="5">
                     <StackLayout Orientation="Horizontal">
                         <Image Source="reg.png" HeightRequest="60" VerticalOptions="Center"/>
-                        <Entry Placeholder="Média diária e tempo:" HorizontalOptions="FillAndExpand"/>
+                        <Entry  x:Name="mediadiariaEntry" Placeholder="Média diária e tempo:" HorizontalOptions="FillAndExpand"/>
                     </StackLayout>
                 </Frame>
 

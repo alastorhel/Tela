@@ -5,9 +5,9 @@ namespace Coisano.Modelos
 
      public int id { get; set; }
         public string Cortadora { get; set; }
-        public string MatériaPrima { get; set; }
+        public string MateriaPrima { get; set; }
 
-          public int Quantidade { get; set; }
+          public string Quantidade { get; set; }
 }
 
 }
