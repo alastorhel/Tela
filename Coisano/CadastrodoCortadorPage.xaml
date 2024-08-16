@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Coisano.CadastrodoCortador"
+             x:Class="Coisano.CadastrodoCortadorPage"
              Title="Cadastro do Cortador(A)"
                Shell.NavBarIsVisible="false"
              BackgroundColor="#b9edcb">
@@ -17,7 +17,7 @@
                     <Entry x:Name="TelefoneEntry" Placeholder="Telefone" Keyboard="Telephone" BackgroundColor="White"/>
 
                     <Button Text="Continuar e Salvar" Clicked="OnSaveContinueClicked"    BackgroundColor="#63c983"/>
-                    <Button Text="Voltar" Clicked="OnBackClicked" BackgroundColor="#63c983" />
+
                 </StackLayout>
             </Frame>
 

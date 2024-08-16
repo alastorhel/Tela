@@ -8,7 +8,7 @@ public class Vendas : Registro
   public string DatadoPedido { get; set; }
   public int Total { get; set; }
 
-  public int Desconto { get; set; }
+  public string Desconto { get; set; }
  
   public string DatadeEntrega { get; set; }
 

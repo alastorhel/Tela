@@ -50,7 +50,7 @@ namespace Coisano
                  c.Quantidade = QuantidadeEntry.Text;
                 envioparaoCorteControle.CriarOuAtualizar(c);
 
-           Application.Current.MainPage = new CadastrodoCortador();
+           Application.Current.MainPage = new CadastrodoCortadorPage();
         }
 
        

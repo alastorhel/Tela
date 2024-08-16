@@ -8,7 +8,7 @@ public class EnvioparaoCorteControle : BaseControle
 
   public EnvioparaoCorteControle () : base()
   {
-    NomeDaTabela = "EnvioparaoCorte ";
+    NomeDaTabela = "EnvioparaoCorte";
   }
 
   //----------------------------------------------------------------------------

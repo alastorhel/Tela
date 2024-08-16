@@ -17,7 +17,7 @@ namespace Coisano
 
         private void OnBackButtonClicked(object sender, EventArgs e)
         {
-             Application.Current.MainPage = new CadastrodaCostureira();
+             Application.Current.MainPage = new CadastrodaCostureiraPage();
             Navigation.PopAsync();
         }
     }
