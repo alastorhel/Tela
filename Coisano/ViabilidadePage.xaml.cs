@@ -16,11 +16,15 @@ namespace Coisano
       {  Application.Current.MainPage = new CadastrodoProduto();
      
       }
-      private void OnSaveClicked(object sender, EventArgs args)
+      private async void OnSaveClicked(object sender, EventArgs args)
       {
         if      (string.IsNullOrWhiteSpace(ProdutoEntry.Text) ||
                 string.IsNullOrWhiteSpace(ViabilidadeEntry.Text) ||
-                string.IsNullOrWhiteSpace(QuantidadeEntry.Text)); 
+                string.IsNullOrWhiteSpace(QuantidadeEntry.Text))
+
+                {
+                              await DisplayAlert("ERRO!!", "Dados inválidos", "OK");
+                }
 
              
 
@@ -31,6 +35,8 @@ namespace Coisano
                  c.viabilidade = ViabilidadeEntry.Text;
                  c.Quantidade = QuantidadeEntry.Text;
                  viabilidadeControle.CriarOuAtualizar(c);
+
+                  await DisplayAlert("Dados Corretos!!", "Seus dados foram salvos com Sucesso!!", "OK");
 
                 Application.Current.MainPage = new MédiaDiariaPage();
 

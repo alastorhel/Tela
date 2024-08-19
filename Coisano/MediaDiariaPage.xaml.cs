@@ -12,10 +12,14 @@ namespace Coisano
             InitializeComponent();
         }
 
-         private void OnSaveClicked(object sender, EventArgs args)
+         private async void OnSaveClicked(object sender, EventArgs args)
       {
         if      (string.IsNullOrWhiteSpace( ClienteEntry.Text) ||
-                string.IsNullOrWhiteSpace(mediadiariaEntry.Text)); 
+                string.IsNullOrWhiteSpace(mediadiariaEntry.Text))
+
+                {
+                     await DisplayAlert("ERRO!!", "Dados inválidos", "OK");
+                }
 
              
 
@@ -25,6 +29,8 @@ namespace Coisano
                  c.Cliente = ClienteEntry.Text;
                  c.mediadiaria = mediadiariaEntry.Text;
                  mediadiáriaControle.CriarOuAtualizar(c);
+
+                  await DisplayAlert("Dados Corretos!!", "Seus dados foram salvos com Sucesso!!", "OK");
 
                 Application.Current.MainPage = new Listadeclientes();
       }

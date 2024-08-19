@@ -29,8 +29,9 @@ namespace Coisano
                  cadastrodoCortadorControle.CriarOuAtualizar(c);
 
            Application.Current.MainPage = new EnvioParaCosturaPage();
-            ErrorLayout.IsVisible = true;
+            ErrorLayout.IsVisible = false;
             ErrorLabel.Text = "Cortador(A), não encontrado!!";
+            
         }
 
        

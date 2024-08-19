@@ -17,7 +17,8 @@ namespace Coisano
       {
        Application.Current.MainPage = new CadastrodoProduto();
       }
-      private void OnSaveClicked(object sender, EventArgs args)
+
+      private async void OnSaveClicked(object sender, EventArgs args)
       {
        
         
@@ -25,9 +26,11 @@ namespace Coisano
                 string.IsNullOrWhiteSpace(DescriçãoEntry.Text) ||
                 string.IsNullOrWhiteSpace(codIdentificaçaoEntry.Text) ||
                 string.IsNullOrWhiteSpace(CategoriaEntry.Text) ||
-                string.IsNullOrWhiteSpace(PreçoUnidadeEntry.Text)); 
+                string.IsNullOrWhiteSpace(PreçoUnidadeEntry.Text))
 
-             
+             {
+                await DisplayAlert("ERRO!!", "Dados inválidos", "OK");
+             }
               
              
              else
@@ -39,6 +42,8 @@ namespace Coisano
                  c.Categoria = CategoriaEntry.Text;
                  c.PreçoUnidade = PreçoUnidadeEntry.Text;
                  produtoControle.CriarOuAtualizar(c);
+
+                 await DisplayAlert("Dados Corretos!!", "Seus dados foram salvos com Sucesso!!", "OK");
 
                  Application.Current.MainPage = new ViabilidadePage();
 
