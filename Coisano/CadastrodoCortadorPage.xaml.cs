@@ -14,11 +14,14 @@ namespace Coisano
             InitializeComponent();
         }
 
-        private void OnSaveContinueClicked(object sender, EventArgs e)
+        private async void OnSaveContinueClicked(object sender, EventArgs e)
         {
               if      (string.IsNullOrWhiteSpace(NomeEntry.Text) ||
-                string.IsNullOrWhiteSpace(TelefoneEntry.Text)); 
+                string.IsNullOrWhiteSpace(TelefoneEntry.Text))
 
+                 {
+                              await DisplayAlert("ERRO!!", "Dados inválidos", "OK");
+                }
              
 
              else
@@ -27,6 +30,9 @@ namespace Coisano
                  c.Nome = NomeEntry.Text;
                  c.Telefone = TelefoneEntry.Text;
                  cadastrodoCortadorControle.CriarOuAtualizar(c);
+
+                 
+                await DisplayAlert("Dados Corretos!!", "Seus dados foram salvos com Sucesso!!", "OK");
 
            Application.Current.MainPage = new EnvioParaCosturaPage();
             ErrorLayout.IsVisible = false;

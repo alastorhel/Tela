@@ -12,10 +12,18 @@ namespace Coisano
             InitializeComponent();
         }
 
-        private void OnContinuarSalvarClicked(object sender, EventArgs e)
+        private async void OnContinuarSalvarClicked(object sender, EventArgs e)
         {
              if      (string.IsNullOrWhiteSpace(NomeEntry.Text) ||
-                string.IsNullOrWhiteSpace(TelefoneEntry.Text)); 
+                string.IsNullOrWhiteSpace(TelefoneEntry.Text))
+
+
+                
+                {
+                      
+               await DisplayAlert("ERRO!!", "Dados inválidos", "OK");
+                
+            }
 
              
 
@@ -27,6 +35,9 @@ namespace Coisano
         
                  cadastroCostureiraControle.CriarOuAtualizar(c);
 
+                  await DisplayAlert("Dados Corretos!!", "Seus dados foram salvos com Sucesso!!", "OK");
+
+
             if (string.IsNullOrWhiteSpace(NomeEntry.Text) || string.IsNullOrWhiteSpace(TelefoneEntry.Text))
             {
                 MensagemErro.IsVisible = true;
@@ -34,7 +45,7 @@ namespace Coisano
             else
             {
                 MensagemErro.IsVisible = false;
-                Application.Current.MainPage = new EnvioparaoAcabamento();
+                Application.Current.MainPage = new EnvioparaoAcabamentoPage();
             }
         }
 

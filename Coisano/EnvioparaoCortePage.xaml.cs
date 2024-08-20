@@ -34,13 +34,16 @@ namespace Coisano
             ErrorLabel.Text = "Matéria Prima não encontrada!";
         }
 
-        private void OnSaveContinueClicked(object sender, EventArgs e)
+        private async void OnSaveContinueClicked(object sender, EventArgs e)
         {
             if      (string.IsNullOrWhiteSpace( CortadoraEntry.Text) ||
                      string.IsNullOrWhiteSpace(QuantidadeEntry.Text) ||
-                    string.IsNullOrWhiteSpace(MateriaPrimaEntry.Text)); 
+                    string.IsNullOrWhiteSpace(MateriaPrimaEntry.Text))
 
              
+                {
+                              await DisplayAlert("ERRO!!", "Dados inválidos", "OK");
+                }
 
              else
              {
@@ -49,6 +52,8 @@ namespace Coisano
                  c.MateriaPrima = MateriaPrimaEntry.Text;
                  c.Quantidade = QuantidadeEntry.Text;
                 envioparaoCorteControle.CriarOuAtualizar(c);
+
+                await DisplayAlert("Dados Corretos!!", "Seus dados foram salvos com Sucesso!!", "OK");
 
            Application.Current.MainPage = new CadastrodoCortadorPage();
         }

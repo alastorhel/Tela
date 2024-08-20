@@ -20,13 +20,15 @@ namespace Coisano
             ErrorLabel.Text = "Costureira(O), não encontrada!!";
         }
 
-        private void OnSaveContinueClicked(object sender, EventArgs e)
+        private async void OnSaveContinueClicked(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(CostureiraEntry.Text) ||
                 string.IsNullOrWhiteSpace(MateriaPrimaEntry.Text) ||
                 string.IsNullOrWhiteSpace(QuantidadeEntry.Text))
             {
-
+                      
+               await DisplayAlert("ERRO!!", "Dados inválidos", "OK");
+                
             }
 
 
@@ -37,6 +39,10 @@ namespace Coisano
                 c.MateriaPrima = MateriaPrimaEntry.Text;
                 c.Quantidade = QuantidadeEntry.Text;
                 envioparacosturaControle.CriarOuAtualizar(c);
+
+                await DisplayAlert("Dados Corretos!!", "Seus dados foram salvos com Sucesso!!", "OK");
+
+
                 Application.Current.MainPage = new VendasPage();
             }
         }

@@ -3,6 +3,7 @@ namespace Coisano.Modelos
 
 public class Produto : Registro
 {
+  
     public int id { get; set; }
   public string Nome { get; set; }
   public string Descrição { get; set; }

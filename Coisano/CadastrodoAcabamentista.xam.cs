@@ -17,7 +17,7 @@ namespace Coisano
 
         private void OnBackButtonClicked(object sender, EventArgs e)
         {
-             Application.Current.MainPage = new EnvioparaoAcabamento();
+             Application.Current.MainPage = new EnvioparaoAcabamentoPage();
             Navigation.PopAsync();
         }
     }

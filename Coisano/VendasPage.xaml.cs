@@ -12,12 +12,18 @@ namespace Coisano
             InitializeComponent();
         }
 
-        private void OnSaveButtonClicked(object sender, EventArgs e)
+        private async void OnSaveButtonClicked(object sender, EventArgs e)
         {
             if      (string.IsNullOrWhiteSpace(ClienteEntry.Text) ||
                 string.IsNullOrWhiteSpace(PedidoEntry.Text) ||
-                string.IsNullOrWhiteSpace(DescontoEntry.Text)); 
+                string.IsNullOrWhiteSpace(DescontoEntry.Text))
 
+
+                {
+                      
+               await DisplayAlert("ERRO!!", "Dados inválidos", "OK");
+                
+            }
              
 
              else
@@ -27,6 +33,8 @@ namespace Coisano
                  c.DatadoPedido = PedidoEntry.Text;
                  c.Desconto = DescontoEntry.Text;
                  vendasControle.CriarOuAtualizar(c);
+
+                  await DisplayAlert("Dados Corretos!!", "Seus dados foram salvos com Sucesso!!", "OK");
 
             Application.Current.MainPage = new CadastrodaCostureiraPage();
             DisplayAlert("Success", "Customer information saved successfully", "OK");

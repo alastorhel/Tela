@@ -2,6 +2,7 @@ namespace Coisano.Modelos
 {
     public class Cliente : Registro
 {
+  
 
     public int id { get; set; }
   public string Nome { get; set; }
