@@ -16,7 +16,7 @@ public class ProdutoControle : BaseControle
   public virtual Registro? Ler(int idProduto)
   {
     var collection = liteDB.GetCollection<Produto>(NomeDaTabela);
-    return collection.FindOne(d => d.id == idProduto);
+    return collection.FindOne(d => d.Id == idProduto);
   }
 
   //----------------------------------------------------------------------------

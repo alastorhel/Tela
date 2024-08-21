@@ -16,7 +16,7 @@ public class ViabilidadeControle : BaseControle
   public virtual Registro? Ler(int idViabilidade)
   {
     var collection = liteDB.GetCollection<Viabilidade>(NomeDaTabela);
-    return collection.FindOne(d => d.id == idViabilidade);
+    return collection.FindOne(d => d.Id == idViabilidade);
   }
 
   //----------------------------------------------------------------------------

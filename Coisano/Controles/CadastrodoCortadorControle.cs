@@ -16,7 +16,7 @@ public class CadastrodoCortadorControle : BaseControle
   public virtual Registro? Ler(int idCadastrodoCortador)
   {
     var collection = liteDB.GetCollection<CadastrodoCortador>(NomeDaTabela);
-    return collection.FindOne(d => d.id == idCadastrodoCortador);
+    return collection.FindOne(d => d.Id == idCadastrodoCortador);
   }
 
   //----------------------------------------------------------------------------

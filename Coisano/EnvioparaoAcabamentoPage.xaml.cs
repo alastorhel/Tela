@@ -1,3 +1,4 @@
+using Coisano.Modelos;
 using Controles;
 using Microsoft.Maui.Controls;
 
@@ -28,7 +29,7 @@ namespace Coisano
 
             else
             {
-                var c = new EnvioparaoAcabamentoPage();
+                var c = new EnvioparaoAcabamento();
                 c.Nome = NomeEntry.Text;
                 c.Identificaçãodoproduto = IdentificaçãodoprodutoEntry.Text;
                 c.Quantidade = QuantidadeEntry.Text;
@@ -36,7 +37,7 @@ namespace Coisano
 
                 await DisplayAlert("Dados Corretos!!", "Seus dados foram salvos com Sucesso!!", "OK");
 
-                Application.Current.MainPage = new CadastrodoAcabamentista();
+                Application.Current.MainPage = new CadastrodoAcabamentistaPage();
             }
 
         }

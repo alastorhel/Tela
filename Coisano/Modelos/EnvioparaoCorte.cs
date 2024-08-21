@@ -1,9 +1,11 @@
+using LiteDB;
+
 namespace Coisano.Modelos
 {
  public class EnvioparaoCorte : Registro
 {
-
-     public int id { get; set; }
+    [BsonId]
+     public int Id { get; set; }
         public string Cortadora { get; set; }
         public string MateriaPrima { get; set; }
 

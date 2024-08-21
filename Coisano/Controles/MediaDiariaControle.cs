@@ -16,7 +16,7 @@ public class MediaDiariaControle : BaseControle
   public virtual Registro? Ler(int idMediaDiaria)
   {
     var collection = liteDB.GetCollection<MediaDiaria>(NomeDaTabela);
-    return collection.FindOne(d => d.id == idMediaDiaria);
+    return collection.FindOne(d => d.Id == idMediaDiaria);
   }
 
   //----------------------------------------------------------------------------

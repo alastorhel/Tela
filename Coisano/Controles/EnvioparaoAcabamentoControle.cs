@@ -1,6 +1,6 @@
 using Coisano;
 using Coisano.Modelos;
-using EnvioparaoAcabamento = Coisano.EnvioparaoAcabamentoPage;
+
 
 namespace Controles;
 
@@ -18,7 +18,7 @@ public class EnvioparaoAcabamentoControle : BaseControle
   public virtual Registro? Ler(int idEnvioparaoAcabamento)
   {
     var collection = liteDB.GetCollection<EnvioparaoAcabamento>(NomeDaTabela);
-    return collection.FindOne(d => d.id == idEnvioparaoAcabamento);
+    return collection.FindOne(d => d.Id == idEnvioparaoAcabamento);
   }
 
   //----------------------------------------------------------------------------
@@ -31,18 +31,18 @@ public class EnvioparaoAcabamentoControle : BaseControle
 
   //----------------------------------------------------------------------------
 
-  public virtual void Apagar(int EnvioparaAcabamento)
+  public virtual void Apagar(int envioparaoAcabamento)
   {
     var collection = liteDB.GetCollection<EnvioparaoAcabamento>(NomeDaTabela);
-    collection.Delete(EnvioparaoAcabamento);
+    collection.Delete(envioparaoAcabamento);
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual void CriarOuAtualizar(EnvioparaoAcabamento EnvioparaoAcabamento)
+  public virtual void CriarOuAtualizar(EnvioparaoAcabamento envioparaoAcabamento)
   {
     var collection = liteDB.GetCollection<EnvioparaoAcabamento>(NomeDaTabela);
-    collection.Upsert(EnvioparaoAcabamento);
+    collection.Upsert(envioparaoAcabamento);
   }
 
     

@@ -16,7 +16,7 @@ public class ControledeEstoqueControle : BaseControle
   public virtual Registro? Ler(int idControledeEstoque)
   {
     var collection = liteDB.GetCollection<ControledeEstoque>(NomeDaTabela);
-    return collection.FindOne(d => d.id == idControledeEstoque);
+    return collection.FindOne(d => d.Id == idControledeEstoque);
   }
 
   //----------------------------------------------------------------------------

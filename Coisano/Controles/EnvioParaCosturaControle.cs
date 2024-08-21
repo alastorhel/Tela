@@ -16,7 +16,7 @@ public class EnvioParaCosturaControle : BaseControle
   public virtual Registro? Ler(int idEnvioParaCostura)
   {
     var collection = liteDB.GetCollection<EnvioParaCostura>(NomeDaTabela);
-    return collection.FindOne(d => d.id == idEnvioParaCostura);
+    return collection.FindOne(d => d.Id == idEnvioParaCostura);
   }
 
   //----------------------------------------------------------------------------

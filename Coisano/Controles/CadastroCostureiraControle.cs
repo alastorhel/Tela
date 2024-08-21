@@ -16,7 +16,7 @@ public class CadastroCostureiraControle : BaseControle
   public virtual Registro? Ler(int idCadastroCostureira)
   {
     var collection = liteDB.GetCollection<CadastroCostureira>(NomeDaTabela);
-    return collection.FindOne(d => d.id == idCadastroCostureira);
+    return collection.FindOne(d => d.Id == idCadastroCostureira);
   }
 
   //----------------------------------------------------------------------------

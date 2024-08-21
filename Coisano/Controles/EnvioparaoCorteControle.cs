@@ -16,7 +16,7 @@ public class EnvioparaoCorteControle : BaseControle
   public virtual Registro? Ler(int idEnvioparaoCorte)
   {
     var collection = liteDB.GetCollection<EnvioparaoCorte>(NomeDaTabela);
-    return collection.FindOne(d => d.id == idEnvioparaoCorte);
+    return collection.FindOne(d => d.Id == idEnvioparaoCorte);
   }
 
   //----------------------------------------------------------------------------

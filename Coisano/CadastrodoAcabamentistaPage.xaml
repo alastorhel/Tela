@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Coisano.CadastrodoAcabamentista"
+             x:Class="Coisano.CadastrodoAcabamentistaPage"
              Title="Cadastro do Acabamentista"
               Shell.NavBarIsVisible="false"
              BackgroundColor="#b9edcb">
@@ -10,11 +10,11 @@
             <Label Text="Cadastro do Acabamentista" FontSize="Large" HorizontalOptions="Center" />
 
             <StackLayout Orientation="Vertical" VerticalOptions="Center">
-                <Entry Placeholder="Nome do responsável pelo acabamento:" WidthRequest="300" BackgroundColor="White" />
+                <Entry x:Name="NomeEntry" Placeholder="Nome do responsável pelo acabamento:" WidthRequest="300" BackgroundColor="White" />
             </StackLayout>
 
             <StackLayout Orientation="Vertical" VerticalOptions="Center">
-                <Entry Placeholder="Telefone:" WidthRequest="300" BackgroundColor="White" />
+                <Entry x:Name="TelefoneEntry" Placeholder="Telefone:" WidthRequest="300" BackgroundColor="White" />
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="Center">
