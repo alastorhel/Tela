@@ -32,7 +32,7 @@ namespace Coisano
 
                   await DisplayAlert("Dados Corretos!!", "Seus dados foram salvos com Sucesso!!", "OK");
 
-                Application.Current.MainPage = new Listadeclientes();
+                Application.Current.MainPage = new ListadeclientesPage();
       }
        
       }

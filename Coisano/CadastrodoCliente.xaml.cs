@@ -9,6 +9,8 @@ namespace Coisano
     public partial class CadastrodoCliente : ContentPage
     {
         ClienteControle clienteControle = new ClienteControle();
+
+        public Cliente cliente { get; set; }
         public CadastrodoCliente()
         {
             InitializeComponent();
