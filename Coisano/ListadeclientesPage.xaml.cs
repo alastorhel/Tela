@@ -29,31 +29,14 @@ public partial class ListadeclientesPage : ContentPage
     Application.Current.MainPage = new CadastrodoCliente();
   }
 
-  private async void OnSaveButtonClicked(object sender, EventArgs e)
+  private void OnDeleteButtonClicked(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(NomeEntry.Text) ||
-                string.IsNullOrWhiteSpace(IdentificaçãodoprodutoEntry.Text) ||
-                string.IsNullOrWhiteSpace(QuantidadeEntry.Text))
+            Application.Current.MainPage = new CadastrodoCliente();
+        }
 
-            {
-                await DisplayAlert("ERRO!!", "Dados inválidos", "OK");
-            }
-
-
-
-            else
-            {
-                var c = new EnvioparaoAcabamento();
-                c.Nome = NomeEntry.Text;
-                c.Identificaçãodoproduto = IdentificaçãodoprodutoEntry.Text;
-                c.Quantidade = QuantidadeEntry.Text;
-                envioparaoAcabamentoControle.CriarOuAtualizar(c);
-
-                await DisplayAlert("Dados Corretos!!", "Seus dados foram salvos com Sucesso!!", "OK");
-
-                Application.Current.MainPage = new CadastrodoAcabamentistaPage();
-            }
-
+        private void OnBackButtonClicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new ControledeEstoque();
         }
 
 }

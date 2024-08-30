@@ -51,6 +51,11 @@ namespace Coisano
             }
         }
 
+         private void OnDeleteButtonClicked(object sender, EventArgs e)
+        {
+            Application.Current.MainPage = new CadastrodoCliente();
+        }
+
 
     }
 }
