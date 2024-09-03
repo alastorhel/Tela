@@ -11,7 +11,7 @@ namespace Coisano
 
         private void OnEnterClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new CadastrodoCliente();
+            Application.Current.MainPage = new Telainicial();
         }
     }
 }

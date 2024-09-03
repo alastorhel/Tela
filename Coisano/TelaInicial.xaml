@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Coisano.Telainicial"
+             Shell.NavBarIsVisible="false">
+
+        <Grid>
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="250"/>
+                        <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <ScrollView Orientation="Vertical"
+                            BackgroundColor="#b9edcb"
+                            Padding="10">
+                        <StackLayout>
+                                <Image Source="imagem.png"
+                                       HeightRequest="200"/>
+                                <BoxView HeightRequest="1"
+                                         BackgroundColor="Purple"
+                                         Margin="0,10,0,10"/>
+
+                                <Button Text="CLIENTE"
+                                HeightRequest="60"
+                                        Clicked="ButtonClienteButtonClicked"
+                                        ImageSource="clint.png"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        BackgroundColor="Transparent"
+                                        TextColor="Black"
+                                        FontAttributes="Bold"/>
+                                <Button Text="PRODUTOS"
+                                HeightRequest="60"
+                                        Clicked="ButtonProdutoButtonClicked"
+                                        ImageSource="caixa.png"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        BackgroundColor="Transparent"
+                                        TextColor="Black"
+                                        FontAttributes="Bold"/>
+                                <Button Text="UNIDADES"
+                                        HeightRequest="60"
+                                        Clicked="ButtonUnidadeButtonClicked"
+                                        ImageSource="caixas.png"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        BackgroundColor="Transparent"
+                                        TextColor="Black"
+                                        FontAttributes="Bold"/>
+                                <Button Text="MATERIA PRIMA"
+                                        HeightRequest="60"
+                                        Clicked="ButtonMateriaprimaButtonClicked"
+                                        ImageSource="caixona.png"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        BackgroundColor="Transparent"
+                                        TextColor="Black"
+                                        FontAttributes="Bold"/>
+                                <Button Text="ENVIO CORTE"
+                                 HeightRequest="60"
+                                        Clicked="ButtonEnviocorteButtonClicked"
+                                        ImageSource="corte.png"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        BackgroundColor="Transparent"
+                                        TextColor="Black"
+                                        FontAttributes="Bold"/>
+                                <Button Text="ENVIO COSTURA"
+                                 HeightRequest="60"
+                                        Clicked="ButtonEnviocosturaButtonClicked"
+                                        ImageSource="veia.png"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        BackgroundColor="Transparent"
+                                        TextColor="Black"
+                                        FontAttributes="Bold"/>
+                                <Button Text="ENVIO ACABAMENTO"
+                                 HeightRequest="60"
+                                        Clicked="ButtonEnvioacabamentoButtonClicked"
+                                        ImageSource="ropa.png"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        BackgroundColor="Transparent"
+                                        TextColor="Black"
+                                        FontAttributes="Bold"/>
+                                <Button Text="VENDAS"
+                                 HeightRequest="60"
+                                        Clicked="ButtonVendasButtonClicked"
+                                        ImageSource="venda.png"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        BackgroundColor="Transparent"
+                                        TextColor="Black"
+                                        FontAttributes="Bold"/>
+                                <Button Text="CORTADORES"
+                                        HeightRequest="60"
+                                        Clicked="ButtonCortadoresButtonClicked"
+                                        ImageSource="pes.png"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        BackgroundColor="Transparent"
+                                        TextColor="Black"
+                                        FontAttributes="Bold"/>
+                                <Button Text="COSTUREIROS"
+                                        HeightRequest="60"
+                                        Clicked="ButtonCostureirosButtonClicked"
+                                        ImageSource="doca.png"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        BackgroundColor="Transparent"
+                                        TextColor="Black"
+                                        FontAttributes="Bold"/>
+                                <Button Text="ACABAMENTISTAS"
+                                        HeightRequest="60"
+                                        Clicked="ButtonAcabamentistasButtonClicked"
+                                        ImageSource="acabamentista.png"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        BackgroundColor="Transparent"
+                                        TextColor="Black"
+                                        FontAttributes="Bold"/>
+
+                                <Button Text="EnvioParaoCorte"
+                                HeightRequest="60"
+                                        Clicked="ButtonEnvioCorteButtonClicked"
+                                        ImageSource="pes.png"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        BackgroundColor="Transparent"
+                                        TextColor="Black"
+                                        FontAttributes="Bold"/>
+
+                                         <Button Text="CadastrodoAcabamentista"
+                                HeightRequest="60"
+                                        Clicked="ButtonAcabamentisstaButtonClicked"
+                                        ImageSource="acabamentista.png"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        BackgroundColor="Transparent"
+                                        TextColor="Black"
+                                        FontAttributes="Bold"/>
+
+                                         <Button Text="MediaDiariaPage"
+                                HeightRequest="60"
+                                        Clicked="ButtonMateriaprimaButtonClicked"
+                                        ImageSource="logoin.png"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        BackgroundColor="Transparent"
+                                        TextColor="Black"
+                                        FontAttributes="Bold"/>
+                        </StackLayout>
+                </ScrollView>
+
+
+                <Image Grid.Column="1"
+                       Source="#b9edcb"
+                       Aspect="AspectFill"/>
+        </Grid>
+</ContentPage>
