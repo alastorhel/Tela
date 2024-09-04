@@ -12,7 +12,11 @@ namespace Coisano.Modelos
   public string CNPJ { get; set; }
   public string DatadeCadastro { get; set; }
 
- }
+        public static implicit operator Page(ListadeClientes v)
+        {
+            throw new NotImplementedException();
+        }
+    }
 
 
   

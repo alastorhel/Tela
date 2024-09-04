@@ -2,29 +2,29 @@ using Coisano.Modelos;
 
 namespace Controles;
 
-public class CadastroMatériaPrimaControle : BaseControle
+public class CadastroMateriaPrimaControle : BaseControle
 {
   //----------------------------------------------------------------------------
 
-  public CadastroMatériaPrimaControle() : base()
+  public CadastroMateriaPrimaControle() : base()
   {
-    NomeDaTabela = "CadastroMatériaPrima";
+    NomeDaTabela = "CadastroMateriaPrima";
   }
 
   //----------------------------------------------------------------------------
 
   public virtual Registro? Ler(int idCadastroMatériaPrima)
   {
-    var collection = liteDB.GetCollection<CadastroMatériaPrima>(NomeDaTabela);
+    var collection = liteDB.GetCollection<CadastroMateriaPrima>(NomeDaTabela);
     return collection.FindOne(d => d.Id == idCadastroMatériaPrima);
   }
 
   //----------------------------------------------------------------------------
 
-  public virtual List<CadastroMatériaPrima>? LerTodos()
+  public virtual List<CadastroMateriaPrima>? LerTodos()
   {
-    var tabela = liteDB.GetCollection<CadastroMatériaPrima>(NomeDaTabela);
-    return new List<CadastroMatériaPrima>(tabela.FindAll().OrderBy(d => d.Nome));
+    var tabela = liteDB.GetCollection<CadastroMateriaPrima>(NomeDaTabela);
+    return new List<CadastroMateriaPrima>(tabela.FindAll().OrderBy(d => d.Nome));
   }
 
   //----------------------------------------------------------------------------
@@ -37,10 +37,10 @@ public class CadastroMatériaPrimaControle : BaseControle
 
   //----------------------------------------------------------------------------
 
-  public virtual void CriarOuAtualizar(CadastroMatériaPrima cadastromatériaprima)
+  public virtual void CriarOuAtualizar(CadastroMateriaPrima cadastromateriaprima)
   {
-    var collection = liteDB.GetCollection<CadastroMatériaPrima>(NomeDaTabela);
-    collection.Upsert(cadastromatériaprima);
+    var collection = liteDB.GetCollection<CadastroMateriaPrima>(NomeDaTabela);
+    collection.Upsert(cadastromateriaprima);
   }
 
   //----------------------------------------------------------------------------

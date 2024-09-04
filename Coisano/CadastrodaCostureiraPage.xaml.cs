@@ -7,9 +7,21 @@ namespace Coisano
     public partial class CadastrodaCostureiraPage : ContentPage
     {
         CadastroCostureiraControle cadastroCostureiraControle = new CadastroCostureiraControle();
+        public CadastroCostureira cadastroCostureira { get; set; }
         public CadastrodaCostureiraPage()
         {
             InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (cadastroCostureira != null)
+            {
+                NomeEntry.Text = cadastroCostureira.Nome;
+                TelefoneEntry.Text = cadastroCostureira.Telefone;
+            }
         }
 
         private async void OnContinuarSalvarClicked(object sender, EventArgs e)
@@ -45,7 +57,7 @@ namespace Coisano
             else
             {
                 MensagemErro.IsVisible = false;
-                Application.Current.MainPage = new EnvioparaoAcabamentoPage();
+                Application.Current.MainPage = new ListadeCostureira();
             }
         }
 

@@ -22,6 +22,23 @@ namespace Coisano
 
         }
 
+         protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (cliente != null)
+            {
+                NomeEntry.Text = cliente.Nome;
+                TelefoneEntry.Text = cliente.Telefone;
+                CpfEntry.Text = cliente.Cpf;
+                EmailEntry.Text = cliente.Email;
+                CnpjEntry.Text = cliente.Cnpj;
+                EnderecoEntry.Text = cliente.Endereço;
+
+            }
+        }
+
+
         private async void OnSaveClicked(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(NomeEntry.Text) ||
@@ -45,7 +62,7 @@ namespace Coisano
                 clienteControle.CriarOuAtualizar(c);
                 
                 await DisplayAlert("Dados Corretos!!", "Seus dados foram salvos com Sucesso!!", "OK");
-                Application.Current.MainPage = new CadastrodoProduto();
+                Application.Current.MainPage = new ListadeclientesPage();
 
 
             }

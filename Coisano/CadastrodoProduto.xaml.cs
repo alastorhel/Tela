@@ -8,15 +8,32 @@ namespace Coisano
     {
 
         ProdutoControle produtoControle = new ProdutoControle();
+          public Produto produto { get; set; }
         public CadastrodoProduto()
+
         {
             InitializeComponent();
         }
 
       private void OnCancelClicked(object sender, EventArgs args)
       {
-       Application.Current.MainPage = new CadastrodoProduto();
+       Application.Current.MainPage = new Telainicial();
       }
+
+      
+         protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (produto != null)
+            {
+                NomeEntry.Text = produto.Nome;
+                DescriçãoEntry.Text = produto.Descrição;
+                codIdentificaçaoEntry.Text = produto.Codigo;
+                CategoriaEntry.Text = produto.Categoria;
+                PreçoUnidadeEntry.Text = produto.PreçoUnidade;
+            }
+        }
 
       private async void OnSaveClicked(object sender, EventArgs args)
       {
@@ -45,7 +62,7 @@ namespace Coisano
 
                  await DisplayAlert("Dados Corretos!!", "Seus dados foram salvos com Sucesso!!", "OK");
 
-                 Application.Current.MainPage = new ViabilidadePage();
+                 Application.Current.MainPage = new ListadeProdutosPage();
 
       }
     }

@@ -15,9 +15,8 @@ public class Produto : Registro
   public string Categoria { get; set; }
  
   public string PreçoUnidade { get; set; }
-
-  
-}
+        public string Codigo { get; internal set; }
+    }
 
 }
     

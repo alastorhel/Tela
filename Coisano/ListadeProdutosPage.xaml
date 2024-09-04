@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Coisano.ListadeclientesPage"
+             x:Class="Coisano.ListadeProdutosPage"
              BackgroundColor="LightBlue"
              Title="Cadastrar cliente">
   <VerticalStackLayout>
-  <Button Text="Criar Novo Cliente"
+  <Button Text="Criar Novo Produto"
           BackgroundColor="Orange"
           FontSize="16"
           TextColor="Black"
@@ -32,7 +32,7 @@
               <Label Text="{Binding Telefone}"
                       FontSize="20"/>
                   
-                      <Button Text="Delete" BackgroundColor="#61c773" TextColor="Black" Clicked="OnDeleteButtonClicked" />
+
                       <Button Text="Voltar" BackgroundColor="#61c773" TextColor="Black" Clicked="OnVoltarButtonClicked" />
             </VerticalStackLayout>
           </ViewCell>

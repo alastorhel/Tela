@@ -1,10 +1,16 @@
+using Coisano.Modelos;
 using Microsoft.Maui.Controls;
 
 namespace Coisano
 {
-    public partial class CadastroMateriaPrima : ContentPage
+    public partial class CadastrodeMateria : ContentPage
     {
-        public CadastroMateriaPrima()
+        internal CadastroMateriaPrima cadastroMateriaPrima;
+
+        Controles.CadastroMateriaPrimaControle cadastroMateriaPrimaControle= new  Controles.CadastroMateriaPrimaControle();
+  
+
+        public CadastrodeMateria()
         {
             InitializeComponent();
         }

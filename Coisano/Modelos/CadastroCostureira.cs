@@ -11,8 +11,12 @@ public class CadastroCostureira : Registro
       public int Id { get; set; }
   public string Nome { get; set; }
   public string Telefone { get; set; }
-  
-}
+
+        public static implicit operator Page(CadastroCostureira v)
+        {
+            throw new NotImplementedException();
+        }
+    }
 
 
 
