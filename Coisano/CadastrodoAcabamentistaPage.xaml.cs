@@ -6,7 +6,9 @@ namespace Coisano
 {
     public partial class CadastrodoAcabamentistaPage : ContentPage
     {
-        CadastrodoAcabamentistaControle cadastrodoAcabamentistaControle = new CadastrodoAcabamentistaControle();
+        Controles.CadastrodoAcabamentistaControle cadastrodoAcabamentistaControle = new Controles.CadastrodoAcabamentistaControle();
+
+        public CadastrodoAcabamentista cadastrodoAcabamentista { get; set; }
         public CadastrodoAcabamentistaPage()
         {
             InitializeComponent();
